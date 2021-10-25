@@ -4,6 +4,7 @@ class GNode:
     def __init__(self, val):
         self.val = val
         self.children = []
+
     def __str__(self):
         return f"Node(val={self.val}, children=[{self.children}])"
 
