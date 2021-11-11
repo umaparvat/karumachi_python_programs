@@ -7,7 +7,7 @@ class Minheap:
     def build_heap(self):
         """
         iterate from middle to 0
-        and build max heap
+        and build min heap
         :return:
         """
         number = (self.size - 1) // 2 + 1
@@ -61,7 +61,7 @@ class Minheap:
         if heap is empty, insert a value at 0's index
         and increase the size.
         if heap has value, add the element at last and
-        call maxheapify from it's parent till 0'th index.
+        call minheapify from it's parent till 0'th index.
         and increase size by 1
         o(logn)
         :param value:
