@@ -2,6 +2,7 @@
 Brute force solution
 youtube link : https://www.youtube.com/watch?v=Ph95IHmRp5M
 leetcode : https://leetcode.com/problems/n-queens/
+O(n!)
 """
 
 
@@ -15,7 +16,8 @@ class Solution:
 
     def solveNQueens(self, n: int) -> List[List[str]]:
         board = [["."] * n for _ in range(n)]
-        return self.backtrack(0, n, board)
+        self.backtrack(0, n, board)
+        return self.result
 
     def backtrack(self, row, n, board):
         if row == n:
@@ -38,5 +40,3 @@ class Solution:
             self.positive_diagonal.remove(row + column_index)
             self.negative_diagonal.remove(row - column_index)
             board[row][column_index] = "."
-        return self.result
-
