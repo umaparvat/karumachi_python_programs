@@ -35,7 +35,7 @@ class Graph:
                 continue
             visited[u] = True
             for v in range(self.V):
-                if visited[v] is False and distance[v] > distance[u]+self.graph[u][v]:
+                if self.graph[u][v] > 0 and visited[v] is False and distance[v] > distance[u]+self.graph[u][v]:
                     distance[v] = distance[u]+self.graph[u][v]
 
 
