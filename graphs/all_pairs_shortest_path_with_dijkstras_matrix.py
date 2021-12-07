@@ -31,7 +31,7 @@ class Graph:
         distance[src] = 0
         for _ in range(self.V):
             u = self.min_index(distance, visited)
-            if not u:
+            if u is None:
                 continue
             visited[u] = True
             for v in range(self.V):

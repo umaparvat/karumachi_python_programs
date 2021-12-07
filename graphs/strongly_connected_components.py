@@ -29,6 +29,17 @@ class Graph:
         return g
 
     def print_scc(self):
+        """
+        O(V+E)
+        kosaraju's algorithm for directed graph
+        strongly connected components.
+        1. if all vertex can reachable from vertex(v).(v to all vertex).
+        2. all vertex can reach vertex(v) [all vertex to V-> transponse graph].
+        it's a strongly connected component.
+        3. two times DFS traversal.
+        4. this can be improved by single traversal DFS by trajan algorithm
+        :return:
+        """
         stack = []
         visitedvertex = [False]*self.V
         for i in range(self.V):

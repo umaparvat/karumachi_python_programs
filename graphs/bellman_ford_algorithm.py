@@ -21,6 +21,7 @@ class Graph:
             for a, b, c in self.graph:
                 if dist[a] != float("inf") and dist[a]+c < dist[b]:
                     dist[b] = dist[a]+c
+                    prev[b] = a
 
 
         for a,b,c in self.graph:
