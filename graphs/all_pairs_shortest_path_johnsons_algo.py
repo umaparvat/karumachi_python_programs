@@ -1,4 +1,6 @@
 """
+To find all pairs shortest path in directed graph.
+
 1. if the graph has negative weight but not negative cycle
 2. add a new node to connect all vertices
 3. calculate bellman ford algorithm for the new node( store result in h)

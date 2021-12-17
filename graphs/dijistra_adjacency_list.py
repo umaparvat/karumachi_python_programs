@@ -1,3 +1,8 @@
+"""
+to find the shortest path in directed graph
+It won't work with negative edges and cycle
+"""
+
 from collections import defaultdict
 import sys
 

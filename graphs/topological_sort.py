@@ -22,6 +22,7 @@ class Graph:
             if not visited[neighbour]:
                 self.topologicalSortUtil(neighbour, visited, stack)
         stack.append(vertex)
+        print(stack, vertex, visited)
 
 
 

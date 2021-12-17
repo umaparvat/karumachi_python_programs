@@ -1,4 +1,7 @@
-
+"""
+it works with negative edges but not negative cycle
+it's used to find shortest path directed graph
+"""
 
 class Graph:
     def __init__(self, vertex):
@@ -7,6 +10,7 @@ class Graph:
 
     def add_edge(self, src, destination, weight):
         self.graph.append([src,destination,weight])
+
     def print_soln(self, distance):
         for k in range(self.V):
             print("{0}\t\t{1}".format(k, distance[k]))
