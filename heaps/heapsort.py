@@ -3,7 +3,7 @@ create a max heap tree
 swap root with last
 reduce heap size
 heapify the remaining elements in heap tree
-until it reduces to single element in tree
+repeat until it reduces to single element in tree
 now the heap will have elements in ascending order
 
 To create descending order

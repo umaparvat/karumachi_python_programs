@@ -10,7 +10,7 @@ class Minheap:
         and build min heap
         :return:
         """
-        number = (self.size - 1) // 2 + 1
+        number = ((self.size - 1) // 2) + 1
         for index in range(number, -1, -1):
             self.min_heapify(index)
 

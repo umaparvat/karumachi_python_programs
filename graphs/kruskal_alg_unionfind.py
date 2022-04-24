@@ -1,4 +1,14 @@
+"""
+Minimum spanning tree for undirected weighted graph
 
+1. sort all the edges based on weight
+2. pick the smallest edge and check whether cycle is formed or not.
+    if cycle is not formed include that in output.
+    (How to detect a cycle. get the edge vertexs parents using union find.
+    if both parents same, it will form a cycle)
+3. Repeat step 2 until v-1 edges in the spanning tree.
+
+"""
 
 class Graph:
 

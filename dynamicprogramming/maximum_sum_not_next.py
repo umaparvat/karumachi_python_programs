@@ -9,7 +9,7 @@ recursive:
     Max(i) = { 0 if i = 0
                arr[0] if i == 1
                max(arr[0], arr[1]) if i == 2
-               max(arr[i]+Max([i-2]), Max(arr[i-1])                if i > 3
+               max(arr[i]+Max([i-2]), Max(arr[i-1])  if i >= 3
 
 """
 

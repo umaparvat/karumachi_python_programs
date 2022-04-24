@@ -1,9 +1,11 @@
 from collections import defaultdict
+
 class MinHeap:
     def __init__(self):
         self.arr = []
         self.pos = []
         self.size = 0
+
     def left(self, index):
         return (2*index)+1
 

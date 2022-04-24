@@ -24,7 +24,7 @@ def decode(string, index, node):
     if node.left is None and node.right is None:
         print(node.char, end="")
         return index
-    index+= 1
+    index += 1
     node = node.left if string[index] == '0' else node.right
     return decode(string, index, node)
 
